@@ -1,0 +1,21 @@
+<title><%= title %></title>
+
+<%= content %>
+<form method="post" action="/users">
+<table>
+    <tr>
+        <th>ログイン名</th>
+        <td><input type="text" name="name" value="<%= form.name %>"></td>
+    </tr>
+    <tr>
+        <th>パスワード</th>
+        <td><input type="password" name="password" value="<%= form.password %>"></td>
+    </tr>
+    <tr>
+        <th></th>
+        <td><input type="submit" value="ログイン"></td>
+    </tr>
+</table>
+</form>
+<p><a href="/users/add">アカウントの作成</a></p>
+<p><a href="/users/forget">パスワード不明の場合</a></p>
